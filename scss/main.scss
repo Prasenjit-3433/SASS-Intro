@@ -6,16 +6,6 @@ $font-lg: 40px;
 $font-md: 30px;
 $font-sm: 20px;
 
-@mixin headingStyles($fontSize: 50px) {
-    font-size: $fontSize;
-    color: $color-secondary;
-    text-align: center;
-}
-
-@mixin footerTransition($params...) {
-    transition: $params;
-}
-
 .nav {
     background-color: $color-primary;
 
@@ -37,20 +27,25 @@ $font-sm: 20px;
     }
 }
 
-.banner {
-    h1 {
-        @include headingStyles($font-lg);
+.heading {
+    color: $color-primary;
+    font-size: $font-lg;
+    background-color: $color-secondary;
+    text-align: center;
+}
+
+
+h1 {
+    @extend .heading;
+
+    &:hover {
+    background-color: green;
     }
 }
 
+
 .footer {
     h3 {
-        @include headingStyles;
-        @include footerTransition(color 0.5s, background-color 1s);
-
-        &:hover {
-            color: $color-tertiaary;
-            background-color: $color-primary;
-        }
+        @extend h1;
     }
 }
