@@ -1,3 +1,8 @@
+.footer h3 {
+  font-style: italic;
+  border: 5px solid red;
+}
+
 .nav {
   background-color: #ffb733;
 }
@@ -23,5 +28,3 @@ h1, .footer h3 {
 h1:hover, .footer h3:hover {
   background-color: green;
 }
-
-/*# sourceMappingURL=main.css.map */
