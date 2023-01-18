@@ -13,7 +13,7 @@
   color: greenyellow;
 }
 
-.heading, h1, .footer h3 {
+h1, .footer h3 {
   color: rgba(255, 165, 0, 0.2);
   font-size: 40px;
   background-color: gray;
@@ -21,15 +21,7 @@
 }
 
 h1:hover, .footer h3:hover {
-  background-color: #70a678;
-}
-
-.banner p {
-  font-size: 40px;
-}
-
-.footer p {
-  font-size: 50px;
+  background-color: green;
 }
 
 /*# sourceMappingURL=main.css.map */
